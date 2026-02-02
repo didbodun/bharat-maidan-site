@@ -119,3 +119,58 @@ nav a:hover {
   color: var(--text-muted);
   margin-right: 16px;
 }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  height: 100vh;
+}
+
+.hero-image {
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 64px;
+  text-align: center;
+}
+
+.hero-center h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  margin-bottom: 24px;
+}
+
+.hero-center p {
+  color: var(--text-muted);
+  max-width: 480px;
+  margin: 0 auto 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn.primary {
+  background: var(--text-main);
+  color: white;
+}
+
+.btn.secondary {
+  border: 1px solid var(--text-main);
+  color: var(--text-main);
+}
+
+
