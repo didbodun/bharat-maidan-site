@@ -172,5 +172,16 @@ nav a:hover {
   border: 1px solid var(--text-main);
   color: var(--text-main);
 }
+/* FIX HEADER OVERLAP */
+.hero-grid {
+  padding-top: 120px; /* висота header */
+}
+
+/* LIMIT HERO WIDTH */
+.hero-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 
 
