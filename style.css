@@ -128,26 +128,25 @@ nav a:hover {
 .hero-image {
   background-size: cover;
   background-position: center;
+  border-radius: 24px;
+  margin: 80px 24px;
 }
 
 .hero-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 64px;
+  padding: 0 80px;
   text-align: center;
 }
 
 .hero-center h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 56px;
-  margin-bottom: 24px;
+  letter-spacing: -0.02em;
 }
 
 .hero-center p {
-  color: var(--text-muted);
-  max-width: 480px;
-  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 1.8;
 }
 
 .hero-buttons {
@@ -182,6 +181,7 @@ nav a:hover {
   max-width: 1400px;
   margin: 0 auto;
 }
+
 
 
 
