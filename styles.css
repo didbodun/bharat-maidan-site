@@ -10992,55 +10992,28 @@ header.masthead h1, header.masthead .h1 {
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
-.lang-wrapper {
-  position: relative;
+/* Language switch styling */
+
+.language-switch {
+    font-weight: 500;
+    padding: 0;
 }
 
-.lang-dropdown {
-  position: relative;
+.language-switch::after {
+    margin-left: 4px;
+    font-size: 0.7rem;
 }
 
-.lang-current {
-  background: rgba(255,255,255,0.15);
-  border: none;
-  color: white;
-  padding: 6px 14px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 14px;
-  backdrop-filter: blur(6px);
-  transition: 0.2s ease;
+/* прибираємо bootstrap-сірість */
+.language-switch:focus,
+.language-switch:active {
+    box-shadow: none;
 }
 
-.lang-current:hover {
-  background: rgba(255,255,255,0.25);
-}
-
-.lang-menu {
-  position: absolute;
-  top: 40px;
-  right: 0;
-  background: white;
-  border-radius: 10px;
-  min-width: 150px;
-  display: none;
-  flex-direction: column;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-  overflow: hidden;
-}
-
-.lang-menu a {
-  padding: 10px 14px;
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
-  transition: 0.2s ease;
-}
-
-.lang-menu a:hover {
-  background: #f2f2f2;
-}
-
-.lang-dropdown.open .lang-menu {
-  display: flex;
+/* Dropdown стиль */
+.language-dropdown {
+    min-width: 120px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    padding: 6px 0;
 }
