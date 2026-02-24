@@ -11069,3 +11069,14 @@ header.masthead h1, header.masthead .h1 {
 .social-links .social-icon:hover {
     opacity: 0.6;
 }
+.about-hero {
+    padding: 120px 0 80px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+.about-section {
+    padding: 80px 0;
+}
+.about-section h2 {
+    margin-bottom: 20px;
+}
