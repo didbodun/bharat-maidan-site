@@ -11032,3 +11032,25 @@ header.masthead h1, header.masthead .h1 {
     opacity: 0.6;       /* легкий fade замість кольору */
     transform: translateY(-2px);
 }
+/* Social icons – corporate right aligned */
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;   /* вправо */
+    align-items: center;
+    gap: 50px;                   /* великий простір між ними */
+    font-size: 2.4rem;           /* більший розмір */
+    margin-top: 30px;
+}
+
+/* прибираємо оранжевий від теми */
+.social-links .social-icon {
+    color: #000 !important;      /* чорний */
+    text-decoration: none;
+}
+
+.social-links .social-icon:hover {
+    color: #000 !important;      /* не стає оранжевим */
+    opacity: 0.6;
+    transform: translateY(-3px);
+}
