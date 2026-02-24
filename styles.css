@@ -11042,7 +11042,7 @@ header.masthead h1, header.masthead .h1 {
     align-items: center;
     gap: 32px;                   /* відстань між іконками */
     font-size: 1.35rem;          /* трохи більші за текст */
-    margin-top: -35px;           /* підняти до рівня тексту */
+    margin-top: -45px;           /* підняти до рівня тексту */
     padding-right: 10px;         /* трохи повітря справа */
 }
 
