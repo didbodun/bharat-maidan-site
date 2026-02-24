@@ -11036,18 +11036,32 @@ header.masthead h1, header.masthead .h1 {
 
 /* ===== Footer Social Icons – Clean Corporate Style ===== */
 
-.social-links {
-    display: flex;
-    justify-content: flex-end;   /* вправо */
-    align-items: center;
-    gap: 32px;                   /* відстань між іконками */
-    font-size: 1.35rem;          /* трохи більші за текст */
-    margin-top: -49px;           /* підняти до рівня тексту */
-    padding-right: 10px;         /* трохи повітря справа */
+/* ===== Desktop ===== */
+@media (min-width: 992px) {
+    .social-links {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 32px;
+        font-size: 1.35rem;
+        margin-top: -49px; /* підняття тільки на великих екранах */
+    }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 991px) {
+    .social-links {
+        display: flex;
+        justify-content: center;   /* по центру */
+        align-items: center;
+        gap: 22px;
+        font-size: 1.25rem;
+        margin-top: 20px;          /* нормальний відступ */
+    }
 }
 
 .social-links .social-icon {
-    color: #000 !important;      /* чорний */
+    color: #000 !important;
     text-decoration: none;
     transition: 0.2s ease;
 }
