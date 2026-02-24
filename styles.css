@@ -11034,23 +11034,24 @@ header.masthead h1, header.masthead .h1 {
 }
 /* Social icons – corporate right aligned */
 
+/* ===== Footer Social Icons – Clean Corporate Style ===== */
+
 .social-links {
     display: flex;
     justify-content: flex-end;   /* вправо */
     align-items: center;
-    gap: 50px;                   /* великий простір між ними */
-    font-size: 2.4rem;           /* більший розмір */
-    margin-top: 30px;
+    gap: 32px;                   /* відстань між іконками */
+    font-size: 1.35rem;          /* трохи більші за текст */
+    margin-top: -35px;           /* підняти до рівня тексту */
+    padding-right: 10px;         /* трохи повітря справа */
 }
 
-/* прибираємо оранжевий від теми */
 .social-links .social-icon {
     color: #000 !important;      /* чорний */
     text-decoration: none;
+    transition: 0.2s ease;
 }
 
 .social-links .social-icon:hover {
-    color: #000 !important;      /* не стає оранжевим */
     opacity: 0.6;
-    transform: translateY(-3px);
 }
