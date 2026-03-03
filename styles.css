@@ -11143,18 +11143,6 @@ color: rgba(255,255,255,0.85);
 .section-green .divider {
 border-color: white;
 }
-html, body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-footer {
-    margin-top: auto;
-}
 .section-green {
 background-color: #138808; /* India green */
 color: white;
