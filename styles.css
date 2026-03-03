@@ -11115,3 +11115,9 @@ header.masthead h1, header.masthead .h1 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.about-hero {
+height: 60vh;
+min-height: 450px;
+background-size: cover;
+background-position: center;
+}
