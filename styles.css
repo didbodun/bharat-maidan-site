@@ -11177,3 +11177,19 @@ padding-bottom: 0.7rem;
 }
 
 }
+/* LANGUAGE SWITCH FIX */
+
+.language-mobile{
+display:none;
+}
+
+@media (max-width: 991px){
+
+.language-desktop{
+display:none;
+}
+
+.language-mobile{
+display:block;
+}
+}
