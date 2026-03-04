@@ -11571,3 +11571,19 @@ padding-bottom:40px;
 }
 
 }
+@media (max-width:768px){
+
+.about-masthead{
+padding-top:140px;
+padding-bottom:200px;
+}
+
+.about-masthead .row{
+min-height:600px;
+}
+
+.about-masthead .btn{
+margin-top:30px;
+}
+
+}
