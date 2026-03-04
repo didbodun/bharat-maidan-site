@@ -11527,3 +11527,47 @@ Copyright © 2024 – Bharat Maidan
 <script src="scripts.js"></script>
 </body>
 </html>
+/* ABOUT HERO */
+
+.about-masthead{
+background-position:center;
+background-size:cover;
+padding-top:140px;
+padding-bottom:140px;
+text-align:center;
+}
+
+.hero-text{
+max-width:650px;
+margin:auto;
+}
+
+/* download button block */
+
+.hero-download{
+background:#f8f9fa;
+padding-top:40px;
+padding-bottom:60px;
+}
+
+/* mobile */
+
+@media (max-width:768px){
+
+.about-masthead{
+padding-top:120px;
+padding-bottom:120px;
+}
+
+.hero-text{
+font-size:1rem;
+padding-left:15px;
+padding-right:15px;
+}
+
+.hero-download{
+padding-top:30px;
+padding-bottom:40px;
+}
+
+}
