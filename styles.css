@@ -11193,3 +11193,20 @@ display:none;
 display:block;
 }
 }
+/* Language switch responsive */
+
+.language-mobile{
+display:none;
+}
+
+@media (max-width:991px){
+
+.language-desktop{
+display:none;
+}
+
+.language-mobile{
+display:block;
+}
+
+}
