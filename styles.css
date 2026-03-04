@@ -11264,3 +11264,266 @@ padding-left:20px;
 padding-right:20px;
 }
 }
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>About – Bharat Maidan</title>
+
+<link rel="icon" type="image/x-icon" href="assets/favicon.png">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link href="styles.css" rel="stylesheet">
+
+</head>
+
+
+<body id="page-top">
+
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+
+<div class="container px-4 px-lg-5">
+
+<a class="navbar-brand" href="index.html">Bharat Maidan</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarResponsive">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+
+<div class="collapse navbar-collapse" id="navbarResponsive">
+
+<ul class="navbar-nav ms-auto my-2 my-lg-0">
+
+
+<li class="nav-item">
+<a class="nav-link active" href="about.html">About Us</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="index.html#services">Our Approach</a>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="index.html#contact">Contact</a>
+</li>
+
+
+<!-- Desktop language dropdown -->
+<li class="nav-item dropdown language-desktop">
+
+<a class="nav-link dropdown-toggle"
+href="#"
+role="button"
+data-bs-toggle="dropdown">
+
+EN
+
+</a>
+
+<ul class="dropdown-menu">
+
+<li><a class="dropdown-item" href="/">English</a></li>
+<li><a class="dropdown-item" href="/uk/">Українська</a></li>
+<li><a class="dropdown-item" href="/hi/">हिन्दी</a></li>
+
+</ul>
+
+</li>
+
+
+<!-- Mobile languages -->
+<li class="nav-item language-mobile">
+<a class="nav-link" href="/">English</a>
+</li>
+
+<li class="nav-item language-mobile">
+<a class="nav-link" href="/uk/">Українська</a>
+</li>
+
+<li class="nav-item language-mobile">
+<a class="nav-link" href="/hi/">हिन्दी</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+
+<!-- HERO -->
+<header class="masthead about-hero">
+
+<div class="container px-4 px-lg-5 h-100">
+
+<div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+
+<div class="col-lg-8">
+
+<h1 class="text-white font-weight-bold">
+About Bharat Maidan
+</h1>
+
+<hr class="divider">
+
+<p class="text-white-75 mb-4">
+
+Bharat Maidan serves as a practical entry point for dialogue, partnerships, and long-term cooperation. If you are looking to initiate, expand, or structure your ideas in India or Ukraine — we provide the direction, connections, and strategic framework to make it happen.
+
+</p>
+
+<a class="btn btn-primary btn-xl download-btn" href="onepager.pdf" download>
+DOWNLOAD ONE PAGER
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+<!-- WHO WE ARE -->
+<section class="page-section">
+
+<div class="container px-4 px-lg-5">
+
+<div class="row justify-content-center">
+
+<div class="col-lg-8 text-center">
+
+<h2 class="mt-0">Our Partners & Expertise</h2>
+
+<hr class="divider">
+
+<p class="text-muted mb-4">
+
+Bharat Maidan is a Ukrainian NGO dedicated to advancing strategic relations between Ukraine and India. Our mission is to create meaningful connections between the two countries through dialogue, cooperation, and long-term partnership initiatives.
+
+</p>
+
+<p class="text-muted mb-4">
+
+Our strength lies in our network. We collaborate with representatives of government institutions, members of parliament, business leaders, academic experts, cultural actors, and members of the Indian diaspora in Ukraine.
+
+</p>
+
+<p class="text-muted mb-4">
+
+Our team brings together practical experience in government affairs, international cooperation, business development, and cultural diplomacy. This combination allows us to understand both institutional processes and the practical needs of cross-border collaboration.
+
+</p>
+
+<p class="text-muted">
+
+Through public diplomacy, municipal cooperation, academic exchange, and institutional engagement, we create structured opportunities for sustainable Ukraine–India collaboration.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- STAY CONNECTED -->
+<section class="bg-light pt-4 pb-0" id="contact">
+
+<div class="container">
+
+<div class="row align-items-start">
+
+
+<div class="col-md-6 text-md-start text-center mb-4 mb-md-0">
+
+<h2 class="mt-0">Stay Connected</h2>
+
+<hr class="divider ms-md-0 mx-auto">
+
+<p class="text-muted">
+We are open to cooperation, partnerships and dialogue
+</p>
+
+</div>
+
+
+<div class="social-links">
+
+<a href="mailto:bharatmaidanorg@gmail.com" class="social-icon">
+<i class="fa-solid fa-envelope"></i>
+</a>
+
+<a href="https://instagram.com/bharat_maidan" target="_blank" class="social-icon">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+<a href="https://facebook.com/" target="_blank" class="social-icon">
+<i class="fa-brands fa-facebook-f"></i>
+</a>
+
+<a href="tel:+380682216231" class="social-icon">
+<i class="fa-solid fa-phone"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="bg-light py-1">
+
+<div class="container px-4 px-lg-5">
+
+<div class="small text-center text-muted">
+
+Copyright © 2024 – Bharat Maidan
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="scripts.js"></script>
+</body>
+</html>
