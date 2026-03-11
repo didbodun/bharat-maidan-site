@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
+    if (mainNav && typeof bootstrap !== 'undefined') {
         new bootstrap.ScrollSpy(document.body, {
             target: '#mainNav',
             rootMargin: '0px 0px -40%',
@@ -52,8 +52,10 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
     // Activate SimpleLightbox plugin for portfolio items
-    new SimpleLightbox({
-        elements: '#portfolio a.portfolio-box'
-    });
+    if (typeof SimpleLightbox !== 'undefined' && document.querySelector('#portfolio a.portfolio-box')) {
+        new SimpleLightbox({
+            elements: '#portfolio a.portfolio-box'
+        });
+    }
 
 });
