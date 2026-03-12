@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Ukraine and India: Cultural Dialogue",
+    "category": "About Ukraine",
+    "date": "2026-03-12",
+    "excerpt": "How cultural cooperation between Ukraine and India is growing.",
+    "slug": "example-article"
+  },
+  {
+    "title": "India Market Outlook for Regional Trade",
+    "category": "Business & Economy",
+    "date": "2026-03-10",
+    "excerpt": "A short review of opportunities for trade collaboration.",
+    "slug": "example-article"
+  },
+  {
+    "title": "Education Partnerships in 2026",
+    "category": "Education",
+    "date": "2026-03-08",
+    "excerpt": "Universities are expanding exchange and research programs.",
+    "slug": "example-article"
+  },
+  {
+    "title": "Community Meeting Highlights",
+    "category": "News & Events",
+    "date": "2026-03-06",
+    "excerpt": "Key outcomes from the recent Bharat Maidan forum.",
+    "slug": "example-article"
+  },
+  {
+    "title": "India and Ukraine: Shared Priorities",
+    "category": "About India",
+    "date": "2026-03-05",
+    "excerpt": "A look at how both countries align on development goals.",
+    "slug": "example-article"
+  }
+]
