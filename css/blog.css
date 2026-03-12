@@ -1,50 +1,45 @@
 :root {
-  --primary-green: #15803d;
-  --saffron: #f25c2a;
-  --background: #ffffff;
-  --soft-background: #f5f5f5;
-  --text-primary: #1f2933;
-  --text-secondary: #6b7280;
+  --blog-primary-green: #15803d;
+  --blog-saffron: #f25c2a;
+  --blog-background: #ffffff;
+  --blog-soft-background: #f5f5f5;
+  --blog-text-primary: #1f2933;
+  --blog-text-secondary: #6b7280;
 }
 
-* {
-  box-sizing: border-box;
+.blog-hero-space {
+  padding-top: 9rem;
+  padding-bottom: 4rem;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: var(--background);
-  color: var(--text-primary);
-  line-height: 1.5;
+.blog-categories-wrap {
+  background: var(--blog-soft-background);
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 0;
 }
 
-.container {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 1rem;
+.blog-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
 }
 
-.site-header {
-  background: var(--primary-green);
+.category-pill {
+  border: 1px solid var(--blog-primary-green);
+  color: var(--blog-primary-green);
+  background: var(--blog-background);
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.category-pill.is-active,
+.category-pill:hover,
+.category-pill:focus {
+  background: var(--blog-primary-green);
   color: #ffffff;
-  padding: 2rem 0;
-  margin-bottom: 1.5rem;
-}
-
-.site-header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.site-header p {
-  margin: 0.5rem 0 0;
-  color: #e6f4ea;
-}
-
-h2 {
-  margin: 0 0 1rem;
 }
 
 .blog-list {
@@ -53,10 +48,11 @@ h2 {
 }
 
 .blog-card {
-  background: var(--soft-background);
+  background: var(--blog-soft-background);
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   padding: 1rem;
+  color: var(--blog-text-primary);
 }
 
 .blog-meta {
@@ -64,40 +60,52 @@ h2 {
   flex-wrap: wrap;
   gap: 0.5rem 1rem;
   margin-bottom: 0.5rem;
-  color: var(--text-secondary);
-  font-size: 0.9rem;
+  color: var(--blog-text-secondary);
+  font-size: 0.92rem;
 }
 
 .blog-category {
-  color: var(--primary-green);
-  font-weight: bold;
+  color: var(--blog-primary-green);
+  font-weight: 700;
 }
 
 .blog-title {
-  margin: 0 0 0.5rem;
-  font-size: 1.2rem;
+  margin: 0 0 0.45rem;
+  font-size: 1.28rem;
 }
 
 .blog-excerpt {
   margin: 0 0 1rem;
-  color: var(--text-secondary);
+  color: var(--blog-text-secondary);
 }
 
 .read-more {
   display: inline-block;
-  background: var(--saffron);
+  background: var(--blog-saffron);
   color: #ffffff;
   text-decoration: none;
   border-radius: 6px;
   padding: 0.5rem 0.9rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .read-more:hover,
 .read-more:focus {
   background: #d94d20;
+  color: #ffffff;
 }
 
-.status-message {
-  color: var(--text-secondary);
+@media (max-width: 767px) {
+  .blog-hero-space {
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+  }
+
+  .blog-title {
+    font-size: 1.1rem;
+  }
+
+  .category-pill {
+    font-size: 0.85rem;
+  }
 }
