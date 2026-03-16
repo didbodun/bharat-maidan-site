@@ -3,6 +3,23 @@
     color: #ffffff;
 }
 
+.map-page #mainNav .navbar-nav .nav-item .nav-link.active {
+    color: #ffffff !important;
+    text-decoration: underline;
+    text-underline-offset: 0.35rem;
+}
+
+@media (min-width: 992px) {
+    .map-page #mainNav .navbar-nav .nav-item .nav-link.active {
+        color: #ffffff !important;
+    }
+
+    .map-page #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link.active {
+        color: #f4623a !important;
+        text-decoration: none;
+    }
+}
+
 .interactive-map-section {
     padding-top: 6.25rem;
     padding-bottom: 3rem;
@@ -68,10 +85,6 @@
 
 .map-canvas .leaflet-control-attribution {
     font-size: 0.7rem;
-}
-
-.map-canvas .leaflet-popup-tip-container {
-    display: none;
 }
 
 .map-canvas .leaflet-popup-content-wrapper {
