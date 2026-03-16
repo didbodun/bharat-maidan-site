@@ -7,6 +7,19 @@ const categories = [
     { name: "Other", color: "#1a2857" }
 ];
 
+
+const locale = window.location.pathname.startsWith("/uk/")
+    ? "uk"
+    : window.location.pathname.startsWith("/hi/")
+        ? "hi"
+        : "en";
+
+const categoryLabels = {
+    en: { All: "All", Culture: "Culture", Education: "Education", Business: "Business", Officials: "Officials", Shopping: "Shopping", Other: "Other" },
+    uk: { All: "Усі", Culture: "Культура", Education: "Освіта", Business: "Бізнес", Officials: "Офіційні", Shopping: "Покупки", Other: "Інше" },
+    hi: { All: "सभी", Culture: "संस्कृति", Education: "शिक्षा", Business: "बिज़नेस", Officials: "अधिकारी", Shopping: "खरीदारी", Other: "अन्य" }
+};
+
 const locations = [
     {
         title: "Embassy of India in Kyiv",
@@ -163,7 +176,7 @@ function locationPopup(location) {
     return `
         <div class="map-popup">
             <a class="map-place-link" href="${location.website}" target="_blank" rel="noopener noreferrer">${location.title}</a><br />
-            <span class="map-popup-category">${location.category}</span><br />
+            <span class="map-popup-category">${categoryLabels[locale][location.category] || location.category}</span><br />
             <span>${location.address}</span><br />
             <span>${location.description}</span>
         </div>
@@ -202,7 +215,7 @@ function renderFilters() {
         .map(
             (category) =>
                 `<button class="category-chip ${category.name === activeCategory ? "active" : ""}" data-category="${category.name}">
-                    ${category.name}
+                    ${categoryLabels[locale][category.name] || category.name}
                 </button>`
         )
         .join("");
@@ -226,7 +239,7 @@ function renderLocationCards() {
             (location) => `
                 <article class="location-card">
                     <h3>🍎 ${location.title}</h3>
-                    <span class="location-meta" style="background-color:${categoryColorMap[location.category]};">${location.category}</span>
+                    <span class="location-meta" style="background-color:${categoryColorMap[location.category]};">${categoryLabels[locale][location.category] || location.category}</span>
                     <p><strong>Address:</strong> ${location.address}</p>
                     <p>${location.description}</p>
                     <div class="location-links">
