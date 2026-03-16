@@ -92,7 +92,7 @@
 }
 
 .map-popup {
-    font-size: 0.9rem;
+    font-size: 0.82rem;
     line-height: 1.45;
     color: #333333;
 }
@@ -105,8 +105,8 @@
 
 .map-place-link {
     color: #1d2238;
-    font-size: 1.85rem;
-    font-size: clamp(1.25rem, 2.4vw, 1.95rem);
+    font-size: 1.05rem;
+    font-size: clamp(0.98rem, 1.6vw, 1.2rem);
     font-family: "Merriweather Sans", sans-serif;
     font-weight: 700;
     text-decoration: none;
@@ -115,8 +115,8 @@
 .map-popup-category {
     color: #cc8615;
     font-family: "Merriweather Sans", sans-serif;
-    font-size: 1.45rem;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: 0.95rem;
+    font-size: clamp(0.88rem, 1.3vw, 1.05rem);
     font-weight: 600;
 }
 
@@ -207,7 +207,7 @@
     }
 
     .map-popup {
-        font-size: 0.84rem;
+        font-size: 0.8rem;
     }
 }
 
