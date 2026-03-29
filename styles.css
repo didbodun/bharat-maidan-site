@@ -11608,6 +11608,10 @@ background-repeat:no-repeat;
     color: #212529 !important;
 }
 
+#mainNav .navbar-nav .nav-item .nav-link.active {
+    color: #212529 !important;
+}
+
 #mainNav .navbar-nav .nav-item .nav-link:hover,
 #mainNav .navbar-nav .nav-item .nav-link:active,
 #mainNav .navbar-brand:hover {
@@ -11619,8 +11623,8 @@ background-repeat:no-repeat;
 }
 
 footer.bg-light.py-2 {
-    padding-top: 0.35rem !important;
-    padding-bottom: 0.35rem !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
     margin: 0 !important;
     border: 0 !important;
 }
@@ -11628,12 +11632,14 @@ footer.bg-light.py-2 {
 footer.bg-light.py-2 .container,
 footer.bg-light.py-2 .small {
     margin-bottom: 0 !important;
+    padding-top: 0 !important;
     padding-bottom: 0 !important;
+    line-height: 1.2 !important;
 }
 
 @media (max-width: 768px) {
     footer.bg-light.py-2 {
-        padding-top: 0.25rem !important;
-        padding-bottom: 0.25rem !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
     }
 }

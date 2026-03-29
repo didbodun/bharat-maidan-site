@@ -1,17 +1,16 @@
 
 .blog-page #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #ffffff !important;
-  text-decoration: underline;
-  text-underline-offset: 0.35rem;
+  color: #212529 !important;
+  text-decoration: none;
 }
 
 @media (min-width: 992px) {
   .blog-page #mainNav .navbar-nav .nav-item .nav-link.active {
-    color: #ffffff !important;
+    color: #212529 !important;
   }
 
   .blog-page #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link.active {
-    color: #f4623a !important;
+    color: #212529 !important;
     text-decoration: none;
   }
 }
