@@ -4,18 +4,17 @@
 }
 
 .map-page #mainNav .navbar-nav .nav-item .nav-link.active {
-    color: #ffffff !important;
-    text-decoration: underline;
-    text-underline-offset: 0.35rem;
+    color: #212529 !important;
+    text-decoration: none;
 }
 
 @media (min-width: 992px) {
     .map-page #mainNav .navbar-nav .nav-item .nav-link.active {
-        color: #ffffff !important;
+        color: #212529 !important;
     }
 
     .map-page #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link.active {
-        color: #f4623a !important;
+        color: #212529 !important;
         text-decoration: none;
     }
 }
@@ -64,7 +63,7 @@
 
 .category-chip.active,
 .category-chip:hover {
-    color: #ffffff;
+    color: #111111;
     background-color: #F45B3A;
     border-color: #F45B3A;
 }
