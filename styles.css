@@ -11618,10 +11618,22 @@ background-repeat:no-repeat;
     background-color: #fff;
 }
 
+footer.bg-light.py-2 {
+    padding-top: 0.35rem !important;
+    padding-bottom: 0.35rem !important;
+    margin: 0 !important;
+    border: 0 !important;
+}
+
+footer.bg-light.py-2 .container,
+footer.bg-light.py-2 .small {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
 @media (max-width: 768px) {
     footer.bg-light.py-2 {
-        padding-top: 0.35rem !important;
-        padding-bottom: 0.35rem !important;
-        margin-bottom: 0 !important;
+        padding-top: 0.25rem !important;
+        padding-bottom: 0.25rem !important;
     }
 }
