@@ -159,7 +159,7 @@ const map = L.map("map", {
     zoomControl: true,
     scrollWheelZoom: true,
     minZoom: 5,
-    maxZoom: 14
+    maxZoom: 15
 });
 
 L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {

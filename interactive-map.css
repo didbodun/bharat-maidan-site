@@ -230,3 +230,16 @@
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
+
+
+.map-page #contact h2 {
+    color: #222 !important;
+}
+
+.map-page #contact .text-muted {
+    color: #5f6c78 !important;
+}
+
+.map-page #contact .social-icon {
+    color: #000 !important;
+}
