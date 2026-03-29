@@ -28,6 +28,22 @@ const uiLabels = {
 
 const locations = [
     {
+        title: "Himalaya Restaurant",
+        titleUk: "Ресторан «Гімалаї»",
+        titleHi: "हिमालय रेस्टोरेंट",
+        category: "Other",
+        address: "Velyka Vasylkivska St, 80, Kyiv, 03150",
+        addressUk: "вулиця Велика Васильківська, 80, Київ, 03150",
+        addressHi: "वेलिका वासिल्किव्स्का स्ट्रीट, 80, कीव, 03150",
+        description: "Indian cuisine restaurant in central Kyiv.",
+        descriptionUk: "Ресторан індійської кухні в центрі Києва.",
+        descriptionHi: "केंद्रिय कीव में भारतीय भोजन का रेस्टोरेंट।",
+        website: "https://maps.app.goo.gl/evYe9dRk2WshTLZAA",
+        phone: "+380 73 466 6707",
+        lat: 50.4269,
+        lng: 30.5162
+    },
+    {
         title: "Embassy of India in Kyiv",
         category: "Officials",
         address: "Velyka Vasylkivska St, 20, Kyiv",
@@ -149,6 +165,12 @@ const locations = [
     }
 ];
 
+function localizedLocationField(location, field) {
+    if (locale === "uk" && location[`${field}Uk`]) return location[`${field}Uk`];
+    if (locale === "hi" && location[`${field}Hi`]) return location[`${field}Hi`];
+    return location[field];
+}
+
 const categoryColorMap = Object.fromEntries(categories.map((category) => [category.name, category.color]));
 let activeCategory = "All";
 let markersLayer;
@@ -179,12 +201,16 @@ function getMarkerIcon(color) {
 }
 
 function locationPopup(location) {
+    const title = localizedLocationField(location, "title");
+    const address = localizedLocationField(location, "address");
+    const description = localizedLocationField(location, "description");
+
     return `
         <div class="map-popup">
-            <a class="map-place-link" href="${location.website}" target="_blank" rel="noopener noreferrer">${location.title}</a><br />
+            <a class="map-place-link" href="${location.website}" target="_blank" rel="noopener noreferrer">${title}</a><br />
             <span class="map-popup-category">${categoryLabels[locale][location.category] || location.category}</span><br />
-            <span><strong>${uiLabels[locale].address}:</strong> ${location.address}</span><br />
-            <span>${location.description}</span>
+            <span><strong>${uiLabels[locale].address}:</strong> ${address}</span><br />
+            <span>${description}</span>
         </div>
     `;
 }
@@ -242,18 +268,24 @@ function renderLocationCards() {
 
     cardsWrap.innerHTML = cards
         .map(
-            (location) => `
+            (location) => {
+                const title = localizedLocationField(location, "title");
+                const address = localizedLocationField(location, "address");
+                const description = localizedLocationField(location, "description");
+
+                return `
                 <article class="location-card">
-                    <h3>🍎 ${location.title}</h3>
+                    <h3>🍎 ${title}</h3>
                     <span class="location-meta" style="background-color:${categoryColorMap[location.category]};">${categoryLabels[locale][location.category] || location.category}</span>
-                    <p><strong>${uiLabels[locale].address}:</strong> ${location.address}</p>
-                    <p>${location.description}</p>
+                    <p><strong>${uiLabels[locale].address}:</strong> ${address}</p>
+                    <p>${description}</p>
                     <div class="location-links">
                         <a href="${location.website}" target="_blank" rel="noopener noreferrer">${uiLabels[locale].website}</a>
                         <span><strong>${uiLabels[locale].phone}:</strong> ${location.phone}</span>
                     </div>
                 </article>
-            `
+            `;
+            }
         )
         .join("");
 
