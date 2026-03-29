@@ -20,6 +20,12 @@ const categoryLabels = {
     hi: { All: "सभी", Culture: "संस्कृति", Education: "शिक्षा", Business: "बिज़नेस", Officials: "अधिकारी", Shopping: "खरीदारी", Other: "अन्य" }
 };
 
+const uiLabels = {
+    en: { address: "Address", website: "Website link", phone: "Phone", noLocations: "No locations available for this category yet." },
+    uk: { address: "Адреса", website: "Посилання", phone: "Телефон", noLocations: "Для цієї категорії поки немає локацій." },
+    hi: { address: "पता", website: "वेबसाइट", phone: "फ़ोन", noLocations: "इस श्रेणी के लिए अभी कोई स्थान उपलब्ध नहीं है।" }
+};
+
 const locations = [
     {
         title: "Embassy of India in Kyiv",
@@ -153,7 +159,7 @@ const map = L.map("map", {
     zoomControl: true,
     scrollWheelZoom: true,
     minZoom: 5,
-    maxZoom: 10
+    maxZoom: 14
 });
 
 L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
@@ -177,7 +183,7 @@ function locationPopup(location) {
         <div class="map-popup">
             <a class="map-place-link" href="${location.website}" target="_blank" rel="noopener noreferrer">${location.title}</a><br />
             <span class="map-popup-category">${categoryLabels[locale][location.category] || location.category}</span><br />
-            <span>${location.address}</span><br />
+            <span><strong>${uiLabels[locale].address}:</strong> ${location.address}</span><br />
             <span>${location.description}</span>
         </div>
     `;
@@ -240,11 +246,11 @@ function renderLocationCards() {
                 <article class="location-card">
                     <h3>🍎 ${location.title}</h3>
                     <span class="location-meta" style="background-color:${categoryColorMap[location.category]};">${categoryLabels[locale][location.category] || location.category}</span>
-                    <p><strong>Address:</strong> ${location.address}</p>
+                    <p><strong>${uiLabels[locale].address}:</strong> ${location.address}</p>
                     <p>${location.description}</p>
                     <div class="location-links">
-                        <a href="${location.website}" target="_blank" rel="noopener noreferrer">Website link</a>
-                        <span><strong>Phone:</strong> ${location.phone}</span>
+                        <a href="${location.website}" target="_blank" rel="noopener noreferrer">${uiLabels[locale].website}</a>
+                        <span><strong>${uiLabels[locale].phone}:</strong> ${location.phone}</span>
                     </div>
                 </article>
             `
@@ -252,7 +258,7 @@ function renderLocationCards() {
         .join("");
 
     if (!cards.length) {
-        cardsWrap.innerHTML = "<p>No locations available for this category yet.</p>";
+        cardsWrap.innerHTML = `<p>${uiLabels[locale].noLocations}</p>`;
     }
 }
 
