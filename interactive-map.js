@@ -1,6 +1,7 @@
 const categories = [
     { name: "Restaurants", color: "#d62828" },
     { name: "Officials", color: "#111111" },
+    { name: "Education", color: "#2f9e44" },
     { name: "Shopping", color: "#1f8f47" },
     { name: "Culture", color: "#ff9933" },
     { name: "YogaDance", color: "#2f9e44" },
@@ -19,6 +20,7 @@ const categoryLabels = {
         All: "All",
         Restaurants: "Restaurants",
         Officials: "Officials",
+        Education: "Education",
         Shopping: "Shopping",
         Culture: "Culture",
         YogaDance: "Yoga & Dance",
@@ -28,6 +30,7 @@ const categoryLabels = {
         All: "Усі",
         Restaurants: "Ресторани",
         Officials: "Офіційні",
+        Education: "Освіта",
         Shopping: "Покупки",
         Culture: "Культура",
         YogaDance: "Йога та танці",
@@ -37,6 +40,7 @@ const categoryLabels = {
         All: "सभी",
         Restaurants: "रेस्तरां",
         Officials: "अधिकारी",
+        Education: "शिक्षा",
         Shopping: "खरीदारी",
         Culture: "संस्कृति",
         YogaDance: "योग और नृत्य",
@@ -52,6 +56,60 @@ const uiLabels = {
 
 const locations = [
     {
+        title: "Hindi Language Center (KNU Institute of Philology)",
+        titleUk: "Центр гінді (Інститут філології КНУ)",
+        titleHi: "हिंदी भाषा केंद्र (केएनयू फिलोलॉजी संस्थान)",
+        category: "Education",
+        address: "Tarasa Shevchenka Blvd, 14, Kyiv, 01601",
+        addressUk: "бульвар Тараса Шевченка, 14, Київ, 01601",
+        addressHi: "तारास शेवचेंको बुलेवार्ड, 14, कीव, 01601",
+        description: "For studying Hindi language and literature.",
+        descriptionUk: "Центр для вивчення мови гінді та літератури.",
+        descriptionHi: "हिंदी भाषा और साहित्य के अध्ययन का केंद्र।",
+        website: "https://maps.app.goo.gl/amGz6f6cLSytmbis5",
+        phone: "+380 44 239 3302",
+        lat: 50.4416,
+        lng: 30.5092,
+        emoji: "📚",
+        featured: true
+    },
+    {
+        title: "Embassy of India in Ukraine",
+        titleUk: "Посольство Індії в Україні",
+        titleHi: "यूक्रेन में भारत का दूतावास",
+        category: "Officials",
+        address: "Maksyma Berlynskoho St, 20-Б, Kyiv, 01901",
+        addressUk: "вулиця Максима Берлинського, 20-Б, Київ, 01901",
+        addressHi: "माक्सिमा बेरलिन्स्कोहा स्ट्रीट, 20-Б, कीव, 01901",
+        description: "Official Embassy of the Republic of India in Ukraine.",
+        descriptionUk: "Офіційне Посольство Республіки Індія в Україні.",
+        descriptionHi: "यूक्रेन में भारत गणराज्य का आधिकारिक दूतावास।",
+        website: "https://maps.app.goo.gl/pJ2XPL2CZJXvW6jJ",
+        phone: "+380 44 468 6661",
+        lat: 50.4730,
+        lng: 30.4632,
+        emoji: "🏛️",
+        featured: true
+    },
+    {
+        title: "Mahatma Gandhi Monument",
+        titleUk: "Пам'ятник Махатма Ганді",
+        titleHi: "महात्मा गांधी स्मारक",
+        category: "Culture",
+        address: "Fomin Botanical Garden, Kyiv, 02000",
+        addressUk: "Ботанічний сад ім. акад. О. В. Фоміна, Київ, 02000",
+        addressHi: "फोमिन बॉटनिकल गार्डन, कीव, 02000",
+        description: "A monument to Mahatma Gandhi in a city park.",
+        descriptionUk: "Пам’ятник Махатма Ганді у міському парку.",
+        descriptionHi: "शहर के पार्क में महात्मा गांधी का स्मारक।",
+        website: "https://maps.app.goo.gl/iqJiSqNxfbWzFPDAA",
+        phone: "—",
+        lat: 50.4418,
+        lng: 30.5049,
+        emoji: "🌳",
+        featured: true
+    },
+    {
         title: "Himalaya Restaurant",
         titleUk: "Ресторан «Гімалаї»",
         titleHi: "हिमालय रेस्टोरेंट",
@@ -65,7 +123,8 @@ const locations = [
         website: "https://maps.app.goo.gl/evYe9dRk2WshTLZAA",
         phone: "+380 73 466 6707",
         lat: 50.4269,
-        lng: 30.5162
+        lng: 30.5162,
+        emoji: "🍎"
     }
 ];
 
@@ -168,7 +227,7 @@ function renderFilters() {
 
 function renderLocationCards() {
     const cardsWrap = document.getElementById("locationCards");
-    const cards = filteredLocations().slice(0, 6);
+    const cards = locations.filter((location) => location.featured).slice(0, 3);
 
     cardsWrap.innerHTML = cards
         .map(
@@ -176,10 +235,11 @@ function renderLocationCards() {
                 const title = localizedLocationField(location, "title");
                 const address = localizedLocationField(location, "address");
                 const description = localizedLocationField(location, "description");
+                const emoji = location.emoji || "📍";
 
                 return `
                 <article class="location-card">
-                    <h3>🍎 ${title}</h3>
+                    <h3>${emoji} ${title}</h3>
                     <span class="location-meta" style="background-color:${categoryColorMap[location.category]};">${categoryLabels[locale][location.category] || location.category}</span>
                     <p><strong>${uiLabels[locale].address}:</strong> ${address}</p>
                     <p>${description}</p>
