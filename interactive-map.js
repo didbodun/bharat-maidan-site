@@ -1,10 +1,10 @@
 const categories = [
-    { name: "Culture", color: "#e7ab2f" },
-    { name: "Education", color: "#2f7f5c" },
-    { name: "Business", color: "#f39c12" },
-    { name: "Officials", color: "#6d6d6d" },
-    { name: "Shopping", color: "#12910f" },
-    { name: "Other", color: "#1a2857" }
+    { name: "Restaurants", color: "#d62828" },
+    { name: "Officials", color: "#111111" },
+    { name: "Shopping", color: "#1f8f47" },
+    { name: "Culture", color: "#ff9933" },
+    { name: "YogaDance", color: "#2f9e44" },
+    { name: "Other", color: "#7a7a7a" }
 ];
 
 
@@ -15,9 +15,33 @@ const locale = window.location.pathname.startsWith("/uk/")
         : "en";
 
 const categoryLabels = {
-    en: { All: "All", Culture: "Culture", Education: "Education", Business: "Business", Officials: "Officials", Shopping: "Shopping", Other: "Other" },
-    uk: { All: "Усі", Culture: "Культура", Education: "Освіта", Business: "Бізнес", Officials: "Офіційні", Shopping: "Покупки", Other: "Інше" },
-    hi: { All: "सभी", Culture: "संस्कृति", Education: "शिक्षा", Business: "बिज़नेस", Officials: "अधिकारी", Shopping: "खरीदारी", Other: "अन्य" }
+    en: {
+        All: "All",
+        Restaurants: "Restaurants",
+        Officials: "Officials",
+        Shopping: "Shopping",
+        Culture: "Culture",
+        YogaDance: "Yoga & Dance",
+        Other: "Other"
+    },
+    uk: {
+        All: "Усі",
+        Restaurants: "Ресторани",
+        Officials: "Офіційні",
+        Shopping: "Покупки",
+        Culture: "Культура",
+        YogaDance: "Йога та танці",
+        Other: "Інше"
+    },
+    hi: {
+        All: "सभी",
+        Restaurants: "रेस्तरां",
+        Officials: "अधिकारी",
+        Shopping: "खरीदारी",
+        Culture: "संस्कृति",
+        YogaDance: "योग और नृत्य",
+        Other: "अन्य"
+    }
 };
 
 const uiLabels = {
@@ -31,7 +55,7 @@ const locations = [
         title: "Himalaya Restaurant",
         titleUk: "Ресторан «Гімалаї»",
         titleHi: "हिमालय रेस्टोरेंट",
-        category: "Other",
+        category: "Restaurants",
         address: "Velyka Vasylkivska St, 80, Kyiv, 03150",
         addressUk: "вулиця Велика Васильківська, 80, Київ, 03150",
         addressHi: "वेलिका वासिल्किव्स्का स्ट्रीट, 80, कीव, 03150",
@@ -42,126 +66,6 @@ const locations = [
         phone: "+380 73 466 6707",
         lat: 50.4269,
         lng: 30.5162
-    },
-    {
-        title: "Embassy of India in Kyiv",
-        category: "Officials",
-        address: "Velyka Vasylkivska St, 20, Kyiv",
-        description: "Official diplomatic mission and consular support center.",
-        website: "https://www.indianembassykyiv.gov.in/",
-        phone: "+380 44 279 6047",
-        lat: 50.4347,
-        lng: 30.5147
-    },
-    {
-        title: "Indian Cultural Centre Kyiv",
-        category: "Culture",
-        address: "Yaroslaviv Val St, Kyiv",
-        description: "Yoga, culture events and India-focused community activities.",
-        website: "https://www.instagram.com/bharat_maidan",
-        phone: "+380 68 221 6231",
-        lat: 50.4548,
-        lng: 30.5111
-    },
-    {
-        title: "Kyiv School of Economics – India Desk",
-        category: "Education",
-        address: "Mykola Shpaka St, 3, Kyiv",
-        description: "Academic exchange and policy dialogue initiatives.",
-        website: "https://kse.ua/",
-        phone: "+380 44 492 8012",
-        lat: 50.4511,
-        lng: 30.4622
-    },
-    {
-        title: "Lviv India Business Forum",
-        category: "Business",
-        address: "Rynok Square, Lviv",
-        description: "Trade and investment networking platform.",
-        website: "https://lvivbusinessforum.com/",
-        phone: "+380 32 235 7744",
-        lat: 49.8419,
-        lng: 24.0315
-    },
-    {
-        title: "Odessa Spice Market",
-        category: "Shopping",
-        address: "Deribasivska St, Odesa",
-        description: "Indian groceries, spices and household products.",
-        website: "https://example.com/odessa-spice-market",
-        phone: "+380 48 701 1122",
-        lat: 46.4846,
-        lng: 30.7326
-    },
-    {
-        title: "Kharkiv India Student Support",
-        category: "Other",
-        address: "Sumska St, Kharkiv",
-        description: "Volunteer support point for students in the city.",
-        website: "https://example.com/kharkiv-student-support",
-        phone: "+380 57 744 0033",
-        lat: 49.9935,
-        lng: 36.2304
-    },
-    {
-        title: "ISKCON Kyiv Temple",
-        category: "Culture",
-        address: "Velyka Zhytomyrska St, 9, Kyiv",
-        description: "Temple and cultural center with community events.",
-        website: "https://iskcon.ua/",
-        phone: "+380 44 000 0001",
-        lat: 50.4572,
-        lng: 30.5170
-    },
-    {
-        title: "Dnipro Education Hub",
-        category: "Education",
-        address: "Dmytra Yavornytskoho Ave, Dnipro",
-        description: "Student advising and exchange preparation support.",
-        website: "https://example.com/dnipro-education-hub",
-        phone: "+380 56 000 0002",
-        lat: 48.4647,
-        lng: 35.0462
-    },
-    {
-        title: "Khmelnytskyi Trade Point",
-        category: "Business",
-        address: "Proskurivska St, Khmelnytskyi",
-        description: "Business matchmaking for SME partnerships.",
-        website: "https://example.com/khm-trade-point",
-        phone: "+380 38 000 0003",
-        lat: 49.4229,
-        lng: 26.9871
-    },
-    {
-        title: "Honorary Consul Liaison Odesa",
-        category: "Officials",
-        address: "Prymorskyi Blvd, Odesa",
-        description: "Regional liaison point for official cooperation requests.",
-        website: "https://example.com/odesa-consul-liaison",
-        phone: "+380 48 000 0004",
-        lat: 46.4858,
-        lng: 30.7438
-    },
-    {
-        title: "Poltava Indian Store",
-        category: "Shopping",
-        address: "Sobornosti St, Poltava",
-        description: "Retail shop with Indian food and essentials.",
-        website: "https://example.com/poltava-indian-store",
-        phone: "+380 53 000 0005",
-        lat: 49.5883,
-        lng: 34.5514
-    },
-    {
-        title: "Chernihiv Community Meetup",
-        category: "Other",
-        address: "Myru Ave, Chernihiv",
-        description: "Local meetup and integration support for diaspora families.",
-        website: "https://example.com/chernihiv-community-meetup",
-        phone: "+380 46 000 0006",
-        lat: 51.4982,
-        lng: 31.2893
     }
 ];
 
