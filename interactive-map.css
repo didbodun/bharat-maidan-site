@@ -136,7 +136,7 @@
     font-family: "Merriweather Sans", sans-serif;
     font-size: 1.45rem;
     margin-bottom: 1rem;
-    color: #333333;
+    color: #111111;
 }
 
 .location-cards {
@@ -157,7 +157,6 @@
     margin-bottom: 0.4rem;
     color: #111111;
     line-height: 1.3;
-    min-height: 2.9rem;
 }
 
 .location-meta {
