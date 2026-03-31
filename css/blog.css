@@ -145,6 +145,34 @@
   font-size: 1.02rem;
 }
 
+.blog-article-body h2,
+.blog-article-body h3 {
+  color: #1d2733;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.blog-article-body h2 {
+  margin-top: 1.4rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.5rem;
+}
+
+.blog-article-body h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.45rem;
+  font-size: 1.1rem;
+}
+
+.blog-article-body ul,
+.blog-article-body ol {
+  margin-bottom: 1rem;
+  padding-left: 1.35rem;
+}
+
+.blog-article-body li {
+  margin-bottom: 0.4rem;
+}
+
 @media (max-width: 767px) {
   .blog-hero-space {
     padding-top: 6rem;
@@ -157,5 +185,18 @@
 
   .blog-meta {
     gap: 0.55rem;
+  }
+
+  .blog-article-body h2 {
+    font-size: 1.28rem;
+  }
+
+  .blog-article-body h3 {
+    font-size: 1.03rem;
+  }
+
+  .blog-article-body ul,
+  .blog-article-body ol {
+    padding-left: 1.1rem;
   }
 }
