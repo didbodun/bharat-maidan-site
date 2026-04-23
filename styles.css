@@ -11596,15 +11596,50 @@ background-position:center;
 background-size:cover;
 background-repeat:no-repeat;
 }
-/* ===== FIX NAVBAR BACKGROUND ===== */
+/* ===== Navbar + mobile footer consistency fixes ===== */
 
 #mainNav {
-    background-color: transparent;
-    transition: background-color 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-/* when page is scrolled */
+#mainNav .navbar-brand,
+#mainNav .navbar-nav .nav-item .nav-link {
+    color: #212529 !important;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active {
+    color: #212529 !important;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover,
+#mainNav .navbar-nav .nav-item .nav-link:active,
+#mainNav .navbar-brand:hover {
+    color: #f4623a !important;
+}
+
 #mainNav.navbar-shrink {
-    background-color: rgba(255,255,255,0.95);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    background-color: #fff;
+}
+
+footer.bg-light.py-2 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+}
+
+footer.bg-light.py-2 .container,
+footer.bg-light.py-2 .small {
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    line-height: 1.2 !important;
+}
+
+@media (max-width: 768px) {
+    footer.bg-light.py-2 {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
 }
