@@ -94,7 +94,7 @@ const locations = [
     {
         title: "MAHARANI THE QUEEN",
         titleUk: "MAHARANI THE QUEEN",
-        titleHi: "महारानी द क्वीन",
+        titleHi: "महारानी क्वीन",
         category: "Culture",
         address: "Mercure Congress Kyiv, Vadima Hetmana St, 6, Kyiv, Ukraine",
         addressUk: "Mercure Congress, Київ, вулиця Вадима Гетьмана, 6, Київ, Україна",
