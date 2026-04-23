@@ -110,6 +110,23 @@ const locations = [
         featured: true
     },
     {
+        title: "MAHARANI THE QUEEN",
+        titleUk: "MAHARANI THE QUEEN",
+        titleHi: "महारानी द क्वीन",
+        category: "Culture",
+        address: "Mercure Congress Kyiv, Vadima Hetmana St, 6, Kyiv, Ukraine",
+        addressUk: "Mercure Congress, Київ, вулиця Вадима Гетьмана, 6, Київ, Україна",
+        addressHi: "Mercure Congress Kyiv, वादीमा हेतमाना स्ट्रीट, 6, कीव, यूक्रेन",
+        description: "The first grand Indian beauty and dance pageant in history, taking place in Kyiv on June 6–7, 2026. “Maharani” is an international premium platform celebrating confidence, individuality, and talent.",
+        descriptionUk: "Перший в історії грандіозний індійський конкурс краси та танцю, який відбудеться в Києві 6 та 7 червня 2026. Конкурс краси та танцю «Махарані» - це міжнародна преміальна платформа, що відзначає впевненість, індивідуальність та талант.",
+        descriptionHi: "इतिहास का पहला भव्य भारतीय ब्यूटी और डांस पेजेंट, जो 6–7 जून 2026 को कीव में आयोजित होगा। “महारानी” एक अंतरराष्ट्रीय प्रीमियम मंच है, जो आत्मविश्वास, व्यक्तित्व और प्रतिभा का उत्सव मनाता है।",
+        website: "https://www.instagram.com/maharanibeautypageant?igsh=MTJmbTg1aTFzZ2llcg%3D%3D",
+        phone: "—",
+        lat: 50.4503,
+        lng: 30.4466,
+        emoji: "👑"
+    },
+    {
         title: "Himalaya Restaurant",
         titleUk: "Ресторан «Гімалаї»",
         titleHi: "हिमालय रेस्टोरेंट",
