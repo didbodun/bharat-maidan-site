@@ -107,7 +107,7 @@ const locations = [
         lat: 50.4418,
         lng: 30.5049,
         emoji: "🌳",
-        featured: true
+        featured: false
     },
     {
         title: "MAHARANI THE QUEEN",
@@ -121,10 +121,14 @@ const locations = [
         descriptionUk: "Перший в історії грандіозний індійський конкурс краси та танцю, який відбудеться в Києві 6 та 7 червня 2026. Конкурс краси та танцю «Махарані» - це міжнародна преміальна платформа, що відзначає впевненість, індивідуальність та талант.",
         descriptionHi: "इतिहास का पहला भव्य भारतीय ब्यूटी और डांस पेजेंट, जो 6–7 जून 2026 को कीव में आयोजित होगा। “महारानी” एक अंतरराष्ट्रीय प्रीमियम मंच है, जो आत्मविश्वास, व्यक्तित्व और प्रतिभा का उत्सव मनाता है।",
         website: "https://www.instagram.com/maharanibeautypageant?igsh=MTJmbTg1aTFzZ2llcg%3D%3D",
+        linkLabel: "Instagram",
+        linkLabelUk: "Instagram",
+        linkLabelHi: "Instagram",
         phone: "—",
         lat: 50.4503,
         lng: 30.4466,
-        emoji: "👑"
+        emoji: "👑",
+        featured: true
     },
     {
         title: "Himalaya Restaurant",
@@ -253,6 +257,7 @@ function renderLocationCards() {
                 const address = localizedLocationField(location, "address");
                 const description = localizedLocationField(location, "description");
                 const emoji = location.emoji || "📍";
+                const linkLabel = localizedLocationField(location, "linkLabel") || uiLabels[locale].website;
 
                 return `
                 <article class="location-card">
@@ -261,7 +266,7 @@ function renderLocationCards() {
                     <p><strong>${uiLabels[locale].address}:</strong> ${address}</p>
                     <p>${description}</p>
                     <div class="location-links">
-                        <a href="${location.website}" target="_blank" rel="noopener noreferrer">${uiLabels[locale].website}</a>
+                        <a href="${location.website}" target="_blank" rel="noopener noreferrer">${linkLabel}</a>
                         <span><strong>${uiLabels[locale].phone}:</strong> ${location.phone}</span>
                     </div>
                 </article>
