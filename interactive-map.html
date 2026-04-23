@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Interactive Map – Bharat Maidan</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link href="styles.css" rel="stylesheet" />
+    <link href="interactive-map.css" rel="stylesheet" />
+</head>
+<body id="page-top" class="map-page">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">Bharat Maidan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Our Approach</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="interactive-map.html">Interactive Map</a></li>
+                    <li class="nav-item dropdown language-desktop">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">EN</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/">English</a></li>
+                            <li><a class="dropdown-item" href="/uk/">Українська</a></li>
+                            <li><a class="dropdown-item" href="/hi/">हिन्दी</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item language-mobile"><a class="nav-link" href="/">English</a></li>
+                    <li class="nav-item language-mobile"><a class="nav-link" href="/uk/">Українська</a></li>
+                    <li class="nav-item language-mobile"><a class="nav-link" href="/hi/">हिन्दी</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="interactive-map-section">
+        <div class="container px-4 px-lg-5">
+            <div class="text-center map-heading">
+                <h1>Interactive Map</h1>
+                <p>Explore Indian-related places across Ukraine.</p>
+            </div>
+
+            <div id="categoryFilters" class="category-filters" aria-label="Location categories"></div>
+
+            <div id="map" class="map-canvas" aria-label="Map of Ukraine with locations"></div>
+
+            <section class="location-list" aria-labelledby="highlighted-locations-title">
+                <h2 id="highlighted-locations-title">Highlighted Locations</h2>
+                <div id="locationCards" class="location-cards"></div>
+            </section>
+        </div>
+    </main>
+
+    <section class="bg-light pt-4 pb-0" id="contact">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-md-6 text-md-start text-center mb-4 mb-md-0">
+                    <h2 class="mt-0">Stay Connected</h2>
+                    <hr class="divider ms-md-0 mx-auto" />
+                    <p class="text-muted">We are open to cooperation, partnerships and dialogue</p>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:bharatmaidanorg@gmail.com" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://instagram.com/bharat_maidan" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61575524130803" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="tel:+380682216231" class="social-icon"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light py-2">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">Copyright &copy; 2024 - Bharat Maidan</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="interactive-map.js"></script>
+</body>
+</html>

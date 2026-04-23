@@ -1,0 +1,210 @@
+.map-page {
+    background-color: #f4623a;
+    color: #ffffff;
+}
+
+.map-page #mainNav .navbar-nav .nav-item .nav-link.active {
+    color: #ffffff !important;
+    text-decoration: underline;
+    text-underline-offset: 0.35rem;
+}
+
+@media (min-width: 992px) {
+    .map-page #mainNav .navbar-nav .nav-item .nav-link.active {
+        color: #ffffff !important;
+    }
+
+    .map-page #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link.active {
+        color: #f4623a !important;
+        text-decoration: none;
+    }
+}
+
+.interactive-map-section {
+    padding-top: 6.25rem;
+    padding-bottom: 3rem;
+}
+
+.map-heading {
+    margin-bottom: 1.25rem;
+}
+
+.map-heading h1 {
+    font-family: "Merriweather Sans", sans-serif;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.map-heading p {
+    margin: 0 auto;
+    max-width: 44rem;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.category-chip {
+    border: 1px solid transparent;
+    border-radius: 999px;
+    padding: 0.5rem 0.95rem;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #333333;
+    background-color: #ffffff;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.07);
+    transition: all 0.2s ease;
+}
+
+.category-chip.active,
+.category-chip:hover {
+    color: #ffffff;
+    background-color: #F45B3A;
+    border-color: #F45B3A;
+}
+
+.map-canvas {
+    width: 100%;
+    height: clamp(20rem, 54vh, 34rem);
+    border-radius: 1.2rem;
+    box-shadow: 0 16px 26px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    border: 1px solid #e2e2e2;
+    margin-bottom: 2rem;
+}
+
+.map-canvas .leaflet-control-zoom a {
+    color: #333333;
+}
+
+.map-canvas .leaflet-control-attribution {
+    font-size: 0.7rem;
+}
+
+.map-canvas .leaflet-popup-content-wrapper {
+    border-radius: 1rem;
+}
+
+.map-popup {
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: #333333;
+}
+
+.map-popup a {
+    color: #F45B3A;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.map-marker {
+    width: 1.15rem;
+    height: 1.15rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: none;
+}
+
+.location-list h2 {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 1.45rem;
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+.location-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.location-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+}
+
+.location-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.location-meta {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 0.2rem 0.65rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.6rem;
+}
+
+.location-card p {
+    margin-bottom: 0.5rem;
+    color: #4c4c4c;
+}
+
+.location-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.92rem;
+}
+
+.location-links a {
+    color: #F45B3A;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (max-width: 575px) {
+    .interactive-map-section {
+        padding-top: 5.8rem;
+    }
+
+    .category-filters {
+        justify-content: flex-start;
+    }
+
+    .category-chip {
+        padding: 0.45rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .map-canvas {
+        height: clamp(18rem, 46vh, 24rem);
+        border-radius: 0.9rem;
+    }
+
+    .map-popup {
+        font-size: 0.84rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .interactive-map-section {
+        padding-top: 7rem;
+    }
+
+    .map-canvas {
+        height: clamp(27rem, 64vh, 42rem);
+    }
+
+    .location-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1200px) {
+    .location-cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
