@@ -175,9 +175,9 @@ const locations = [
         descriptionUk: "Вегетаріанське кафе в Луцьку з індійськими акцентами в меню.",
         descriptionHi: "लुत्स्क में भारतीय प्रेरित विकल्पों वाला शाकाहारी कैफ़े।",
         website: "https://instagram.com/your_mantra_cafe?igshid=MzRlODBiNWFlZA==",
-        phone: "—",
-        lat: 50.7472,
-        lng: 25.3328,
+        phone: "+380 63 941 8333",
+        lat: 50.74985283968578,
+        lng: 25.328959734788633,
         emoji: "🥗"
     },
     {
@@ -192,9 +192,43 @@ const locations = [
         descriptionUk: "Магазин індійських товарів в Івано-Франківську.",
         descriptionHi: "इवानो-फ्रैंकिव्स्क में भारतीय उत्पादों की दुकान।",
         website: "https://tajmahal-shop.com.ua/",
-        phone: "—",
-        lat: 48.9226,
-        lng: 24.7111,
+        phone: "+380 93 287 3193",
+        lat: 48.92253451,
+        lng: 24.70207214,
+        emoji: "🛍️"
+    },
+    {
+        title: "Taj Mahal INDIAN SHOP Kyiv",
+        titleUk: "Магазин індійської продукції \"Тадж махал INDIAN SHOP\" у Києві",
+        titleHi: "ताज महल इंडियन शॉप कीव",
+        category: "Shopping",
+        address: "Chokolivskyi Blvd, 35, Kyiv, Ukraine",
+        addressUk: "бул. Чоколівський, 35, Київ, Україна",
+        addressHi: "चोकोलिव्स्की बुलेवार्ड, 35, कीव, यूक्रेन",
+        description: "Indian products store in Kyiv.",
+        descriptionUk: "Магазин індійських товарів у Києві.",
+        descriptionHi: "कीव में भारतीय उत्पादों की दुकान।",
+        website: "https://tajmahal-shop.com.ua/",
+        phone: "+380 93 287 3193",
+        lat: 50.43059,
+        lng: 30.45359,
+        emoji: "🛍️"
+    },
+    {
+        title: "Taj Mahal INDIAN SHOP Vinnytsia",
+        titleUk: "Магазин індійської продукції \"Тадж махал INDIAN SHOP\" у Вінниці",
+        titleHi: "ताज महल इंडियन शॉप विनित्सिया",
+        category: "Shopping",
+        address: "Keletska St, Myr Shopping Center, basement level, Vinnytsia, Ukraine",
+        addressUk: "вулиця Келецька, ТЦ «Мир», цокольний поверх, Вінниця, Україна",
+        addressHi: "केलेत्स्का स्ट्रीट, मिर शॉपिंग सेंटर, बेसमेंट स्तर, विनित्सिया, यूक्रेन",
+        description: "Indian products store in Vinnytsia's Myr Shopping Center.",
+        descriptionUk: "Магазин індійських товарів у вінницькому ТЦ «Мир».",
+        descriptionHi: "विनित्सिया के मिर शॉपिंग सेंटर में भारतीय उत्पादों की दुकान।",
+        website: "https://tajmahal-shop.com.ua/",
+        phone: "+380 93 287 3193",
+        lat: 49.224732,
+        lng: 28.419304,
         emoji: "🛍️"
     },
     {
@@ -226,7 +260,7 @@ const locations = [
         descriptionUk: "Ресторан індійської кухні в Одесі.",
         descriptionHi: "ओडेसा में भारतीय व्यंजन का रेस्टोरेंट।",
         website: "https://www.instagram.com/tandoori.odesa/",
-        phone: "—",
+        phone: "+380 63 562 8742",
         lat: 46.4838075,
         lng: 30.7349897,
         emoji: "🍽️"
@@ -243,7 +277,7 @@ const locations = [
         descriptionUk: "Ресторан індійської кухні в Одесі.",
         descriptionHi: "ओडेसा में भारतीय रेस्टोरेंट।",
         website: "https://www.google.com/maps/search/?api=1&query=46.4846,30.7326",
-        phone: "—",
+        phone: "+380 99 776 9996",
         lat: 46.4846,
         lng: 30.7326,
         emoji: "🍲"
@@ -266,7 +300,7 @@ const map = L.map("map", {
     zoomControl: true,
     scrollWheelZoom: true,
     minZoom: 5,
-    maxZoom: 15
+    maxZoom: 19
 });
 
 L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
