@@ -227,8 +227,8 @@ const locations = [
         descriptionHi: "ओडेसा में भारतीय व्यंजन का रेस्टोरेंट।",
         website: "https://www.instagram.com/tandoori.odesa/",
         phone: "—",
-        lat: 46.4298,
-        lng: 30.7124,
+        lat: 46.4838075,
+        lng: 30.7349897,
         emoji: "🍽️"
     },
     {
