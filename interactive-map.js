@@ -68,8 +68,8 @@ const locations = [
         descriptionHi: "यूक्रेन में हिंदी भाषा और भारतीय साहित्यिक परंपराओं के अध्ययन के लिए एक प्रमुख अकादमिक स्थान।",
         website: "https://maps.app.goo.gl/amGz6f6cLSytmbis5",
         phone: "+380 44 239 3302",
-        lat: 50.4416,
-        lng: 30.5092,
+        lat: 50.4436551,
+        lng: 30.5122916,
         emoji: "📚",
         featured: true
     },
@@ -86,8 +86,8 @@ const locations = [
         descriptionHi: "यूक्रेन में भारत का आधिकारिक दूतावास, जो कूटनीतिक संबंधों, वीज़ा और कांसुलर सेवाओं का समर्थन करता है।",
         website: "https://maps.app.goo.gl/pJ2XPL2CZJXvW6jJ",
         phone: "+380 44 468 6661",
-        lat: 50.4730,
-        lng: 30.4632,
+        lat: 50.4782489,
+        lng: 30.4427339,
         emoji: "🏛️",
         featured: true
     },
@@ -113,6 +113,40 @@ const locations = [
         featured: true
     },
     {
+        title: "Mahatma Gandhi Monument",
+        titleUk: "Пам’ятник Махатмі Ганді",
+        titleHi: "महात्मा गांधी स्मारक",
+        category: "Culture",
+        address: "Fomin Botanical Garden, Kyiv, 02000",
+        addressUk: "Ботанічний сад ім. акад. О. В. Фоміна, Київ, 02000",
+        addressHi: "फोमिन बॉटनिकल गार्डन, कीव, 02000",
+        description: "A monument honoring Mahatma Gandhi in Kyiv's Fomin Botanical Garden.",
+        descriptionUk: "Пам’ятник Махатмі Ганді в Ботанічному саду ім. акад. О. В. Фоміна у Києві.",
+        descriptionHi: "कीव के फोमिन बॉटनिकल गार्डन में महात्मा गांधी को समर्पित स्मारक।",
+        website: "https://maps.app.goo.gl/imMNfmYcB5MjcwRM9",
+        phone: "—",
+        lat: 50.4435248,
+        lng: 30.5056071,
+        emoji: "🕊️"
+    },
+    {
+        title: "India House",
+        titleUk: "India House",
+        titleHi: "इंडिया हाउस",
+        category: "Culture",
+        address: "Yaroslaviv Val St, 3, Kyiv, 02000",
+        addressUk: "вулиця Ярославів Вал, 3, Київ, 02000",
+        addressHi: "यारोस्लाविव वाल स्ट्रीट, 3, कीव, 02000",
+        description: "India House cultural destination in Kyiv.",
+        descriptionUk: "Культурна локація India House у Києві.",
+        descriptionHi: "कीव में इंडिया हाउस सांस्कृतिक स्थान।",
+        website: "https://maps.app.goo.gl/KAWqeJnNWn4X4MUu7",
+        phone: "—",
+        lat: 50.449341,
+        lng: 30.5117709,
+        emoji: "🏠"
+    },
+    {
         title: "Himalaya Restaurant",
         titleUk: "Ресторан «Гімалаї»",
         titleHi: "हिमालय रेस्टोरेंट",
@@ -125,8 +159,8 @@ const locations = [
         descriptionHi: "केंद्रिय कीव में भारतीय भोजन का रेस्टोरेंट।",
         website: "https://maps.app.goo.gl/evYe9dRk2WshTLZAA",
         phone: "+380 73 466 6707",
-        lat: 50.4269,
-        lng: 30.5162,
+        lat: 50.430887,
+        lng: 30.5156916,
         emoji: "🍎"
     },
     {
