@@ -1,7 +1,7 @@
 const categories = [
     { name: "Restaurants", color: "#d62828" },
     { name: "Officials", color: "#111111" },
-    { name: "Education", color: "#2f9e44" },
+    { name: "Education", color: "#c28b00" },
     { name: "Shopping", color: "#1f8f47" },
     { name: "Culture", color: "#ff9933" },
     { name: "YogaDance", color: "#2f9e44" },
