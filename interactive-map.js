@@ -147,6 +147,26 @@ const locations = [
         emoji: "🏠"
     },
     {
+        title: "Kyiv Temple of Krishna Consciousness",
+        titleUk: "Київський храм свідомості Крішни",
+        titleHi: "कीव कृष्णभावनामृत मंदिर",
+        category: "Other",
+        address: "Dmytrivska St, 21, Kyiv, 02000",
+        addressUk: "вулиця Дмитрівська, 21, Київ, 02000",
+        addressHi: "द्मित्रिव्स्का स्ट्रीट, 21, कीव, 02000",
+        description: "A Hindu temple dedicated to Krishna consciousness in Kyiv.",
+        descriptionUk: "Індуїстський храм свідомості Крішни у Києві.",
+        descriptionHi: "कीव में कृष्णभावनामृत को समर्पित हिंदू मंदिर।",
+        website: "https://maps.app.goo.gl/Pu9EKp9Wp2xVMAPU9",
+        linkLabel: "Google Maps",
+        linkLabelUk: "Google Maps",
+        linkLabelHi: "Google Maps",
+        phone: "+380 73 777 9929",
+        lat: 50.4503125,
+        lng: 30.4901875,
+        emoji: "🛕"
+    },
+    {
         title: "Himalaya Restaurant",
         titleUk: "Ресторан «Гімалаї»",
         titleHi: "हिमालय रेस्टोरेंट",
