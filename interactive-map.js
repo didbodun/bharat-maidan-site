@@ -335,6 +335,26 @@ const locations = [
         lat: 46.4846,
         lng: 30.7326,
         emoji: "🍲"
+    },
+    {
+        title: "Mumbai Rolls",
+        titleUk: "Мумбаї Роллз",
+        titleHi: "मुंबई रोल्स",
+        category: "Restaurants",
+        address: "Kozatskyi Val St, 1, Sumy, Sumy Oblast, 40000",
+        addressUk: "вулиця Козацький Вал, 1, Суми, Сумська область, 40000",
+        addressHi: "कोज़ात्स्की वाल स्ट्रीट, 1, सुमी, सुमी ओब्लास्ट, 40000",
+        description: "Indian street-food restaurant in Sumy.",
+        descriptionUk: "Ресторан індійської вуличної кухні в Сумах.",
+        descriptionHi: "सुमी में भारतीय स्ट्रीट फूड रेस्टोरेंट।",
+        website: "https://maps.app.goo.gl/EEcEQWkaqe1yax4J9",
+        linkLabel: "Google Maps",
+        linkLabelUk: "Google Maps",
+        linkLabelHi: "Google Maps",
+        phone: "—",
+        lat: 50.90993,
+        lng: 34.79777,
+        emoji: "🌯"
     }
 ];
 
