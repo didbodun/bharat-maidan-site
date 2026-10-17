@@ -1,3 +1,23 @@
 [
-  {"title":"MAHARANI THE QUEEN","category":"Culture","date":"23.04.26","excerpt":"Maharani Beauty & Dancing Queen Fest","url":"/events/maharani-queen-fest.html"}
+  {
+    "title": "Maharani The Queen",
+    "category": "Culture",
+    "date": "05.06.2026 - 06.06.2026",
+    "excerpt": "The first grand Indian beauty and dance pageant in history, taking place in Kyiv on June 6–7, 2026. “Maharani” is an international premium platform celebrating confidence, individuality, and talent.",
+    "url": "/events/maharani-queen-fest.html"
+  },
+  {
+    "title": "12th International Day of Yoga in Kyiv",
+    "category": "Sport",
+    "date": "21.06.2026",
+    "excerpt": "Join the Embassy of India in Ukraine for an open-air yoga celebration in Kyiv. Admission is free, with refreshments after the event.",
+    "url": "/events/international-day-of-yoga-2026.html"
+  },
+  {
+    "title": "Free Stop the Bleed Training",
+    "category": "Education",
+    "date": "26.07.2026",
+    "excerpt": "Learn to recognize life-threatening bleeding, use a tourniquet, pack a wound, and apply a pressure dressing. Participation is free; registration is required.",
+    "url": "/events/stop-the-bleed-training-2026.html"
+  }
 ]

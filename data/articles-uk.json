@@ -1,4 +1,16 @@
 [
-  {"title":"Про Україну та пріоритети партнерства","category":"Про Україну","date":"03.03.2026","excerpt":"Як сучасні українські реалії формують пріоритети співпраці.","url":"/uk/articles/about-ukraine-partnership.html"},
-  {"title":"Про Індію: стратегічний погляд","category":"Про Індію","date":"10.04.2026","excerpt":"Коротко про роль Індії у глобальній економіці та дипломатії.","url":"/uk/articles/about-india-ukraine-dialogue.html"}
+  {
+    "title": "Сфери ділової та економічної співпраці між Індією та Україною",
+    "category": "Бізнес та економіка",
+    "date": "07.04.2026",
+    "excerpt": "Стратегічні сектори та напрями виходу на ринок для масштабованої економічної співпраці між Індією та Україною.",
+    "url": "/uk/articles/about-ukraine-partnership.html"
+  },
+  {
+    "title": "Про Bharat Maidan",
+    "category": "Про Bharat Maidan",
+    "date": "03.03.2026",
+    "excerpt": "Хто такі Bharat Maidan, де ми працюємо та як підтримуємо співпрацю між Індією та Україною.",
+    "url": "/uk/articles/about-india-ukraine-dialogue.html"
+  }
 ]
